@@ -1,1 +1,159 @@
-fgfg34ytuoigefhgjlfdhgkuhfeuhgfeohgoudhguidf
+Skip to content
+Markdown Land
+Markdown Land
+What is Markdown?
+Markdown Cheat Sheet
+Markdown Code Block: Including Code In .md Files
+January 11, 2022
+Markdown has support for code blocks. There are three ways to include A Markdown code block in your document:
+
+Inline code blocks
+Fenced code blocks
+Indented code blocks
+In this article, I’ll demonstrate all three ways to include code in a Markdown document.
+
+
+Markdown inline code block
+For starters, Markdown allows you to include inline code in your document. Inline code is surrounded by backticks (`). For example:
+
+1
+Use `print("Hello, world!")` to print a message to the screen.
+Inline code is useful to mention a piece of code in a document. For example, you might want to mention the print function in a document like above. Most of the time, this code won’t be highlighted by the syntax highlighter, however.
+
+Fenced code blocks
+A fenced code block is a block of code that is surrounded by three backticks (“`) and an optional language specifier. In the most basic form, you can leave out the language specifier. For example:
+
+1
+Some regular text here, and here's the code example:
+2
+​
+3
+```
+4
+print("Hello, world!")
+5
+for i in range(10):
+6
+    print(i)
+7
+```
+Enable syntax highlighting
+To enable syntax highlighting for your Markdown code block, you need to specify the language right after the first three backticks, like so:
+
+1
+Some regular text here, and here's the code example:
+2
+​
+3
+```python
+4
+print("Hello, world!")
+5
+for i in range(10):
+6
+    print(i)
+7
+```
+Both examples above will be rendered as a code block in the document. If a language is specified like in the first example, the syntax highlighter will be enabled for the selected language.
+
+
+For a list of commonly available languages, see to list at the bottom of this article.
+
+Indented code blocks
+If fenced code blocks are an option for your specific Markdown parser, I recommend using them because you can specify the language of the code block.
+
+The most basic markdown syntax for indented code blocks is to start a line with four spaces. This will be rendered as a code block in the document and is supported by all Markdown parsers. For example:
+
+1
+Here's some regular text. And now a code block:
+2
+​
+3
+    print("Hello, world!")
+4
+    if True:
+5
+        print('true!')
+The upside of this method is that it is supported by pretty much all Markdown parsers, as far as I know. However, there are some downsides to using indented code blocks as well:
+
+You can’t specify a language, so most likely you won’t have syntax highlighting.
+Indented code blocks are less convient to insert in your document.
+If possible, I strongly suggest using fenced code blocks.
+
+Markdown code block language list
+Which languages are supported, heavily depends on the Markdown parser you’re using. What follows here, is a list of many common languages and formats that you can try. If your language isn’t in here, I suggest you simply try if it is supported. Alternatively, visit the documentation of your specific Markdown.
+
+Here’s the list of commonly supported languages on sites like GitHub:
+
+actionscript3
+apache
+applescript
+asp
+brainfuck
+c
+cfm
+clojure
+cmake
+coffee-script, coffeescript, coffee
+cpp – C++
+cs
+csharp
+css
+csv
+bash
+diff
+elixir
+erb – HTML + Embedded Ruby
+go
+haml
+http
+java
+javascript
+json
+jsx
+less
+lolcode
+make – Makefile
+markdown
+matlab
+nginx
+objectivec
+pascal
+PHP
+Perl
+python
+profile – python profiler output
+rust
+salt, saltstate – Salt
+shell, sh, zsh, bash – Shell scripting
+scss
+sql
+svg
+swift
+rb, jruby, ruby – Ruby
+smalltalk
+vim, viml – Vim Script
+volt
+vhdl
+vue
+xml – XML and also used for HTML with inline CSS and Javascript
+yaml
+Learn more
+Make sure to also check out my Markdown cheat sheet for a quick overview of what’s possible. You might also like to read more about including Markdown tables in your document, and my tricks to center stuff in Markdown.
+
+
+Markdown Introduction
+Markdown Cheat Sheet
+Markdown tables
+Markdown Code Blocks
+README.md files
+How to center stuff
+SQLite Markdown output
+Markdown & WordPress
+Markdown inline code block
+Fenced code blocks
+Indented code blocks
+Markdown code block language list
+Learn more
+
+© 2023 Markdown.land - Our privacy policy
